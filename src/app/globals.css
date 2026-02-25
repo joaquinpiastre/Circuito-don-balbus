@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-black: #000000;
+    --brand-graphite: #0f0f0f;
+    --brand-red: #E63946;
+    --brand-yellow: #FFD000;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-brand-black text-gray-100 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-brand-red px-4 py-2.5 sm:px-6 sm:py-3 font-display text-base sm:text-lg uppercase tracking-wider text-white shadow-glow-red transition-all hover:bg-brand-red-dark hover:shadow-[0_0_25px_rgba(230,57,70,0.5)] focus:outline-none focus:ring-2 focus:ring-brand-red focus:ring-offset-2 focus:ring-offset-brand-black;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-brand-yellow bg-transparent px-4 py-2.5 sm:px-6 sm:py-3 font-display text-base sm:text-lg uppercase tracking-wider text-brand-yellow transition-all hover:bg-brand-yellow hover:text-brand-black focus:outline-none focus:ring-2 focus:ring-brand-yellow focus:ring-offset-2 focus:ring-offset-brand-black;
+  }
+  .section-title {
+    @apply font-display text-2xl sm:text-3xl md:text-4xl uppercase tracking-wider text-white;
+  }
+  .section-title-accent {
+    @apply font-display text-2xl sm:text-3xl md:text-4xl uppercase tracking-wider text-brand-yellow;
+  }
+  .card-racing {
+    @apply rounded-xl border border-brand-yellow/20 bg-brand-graphite/90 p-4 sm:p-6 shadow-lg backdrop-blur-sm;
+  }
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4;
+}
