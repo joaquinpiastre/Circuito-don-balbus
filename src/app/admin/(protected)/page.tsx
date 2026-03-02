@@ -11,6 +11,8 @@ export default function AdminDashboardPage() {
           { href: "/admin/tarifas", label: "Tarifas", desc: "Precios por moto y acompañante" },
           { href: "/admin/eventos", label: "Eventos", desc: "Calendario y competencias" },
           { href: "/admin/galeria", label: "Galería", desc: "Fotos por categoría" },
+          { href: "/admin/contactos", label: "Contactos", desc: "Números de teléfono para mensajes; importar Excel sin duplicados" },
+          { href: "/admin/campanas", label: "Campañas", desc: "Crear campañas con nombre y mensaje para envíos" },
           { href: "/admin/textos", label: "Textos", desc: "Hero, avisos de clima" },
         ].map(({ href, label, desc }) => (
           <Link

@@ -54,6 +54,20 @@ export interface SiteText {
   updated_at?: string;
 }
 
+export interface PhoneContact {
+  id: string;
+  phone_number: string;
+  created_at?: string;
+}
+
+export interface Campaign {
+  id: string;
+  name: string;
+  message_text: string | null;
+  created_at?: string;
+  updated_at?: string;
+}
+
 export interface Testimonial {
   id: string;
   author: string;

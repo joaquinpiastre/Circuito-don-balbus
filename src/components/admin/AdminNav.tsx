@@ -21,6 +21,8 @@ export function AdminNav() {
     { href: "/admin/tarifas", label: "Tarifas" },
     { href: "/admin/eventos", label: "Eventos" },
     { href: "/admin/galeria", label: "Galería" },
+    { href: "/admin/contactos", label: "Contactos" },
+    { href: "/admin/campanas", label: "Campañas" },
     { href: "/admin/textos", label: "Textos" },
   ];
 
